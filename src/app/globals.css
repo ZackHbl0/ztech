@@ -1,0 +1,66 @@
+@import "tailwindcss";
+
+@theme {
+  --color-background: var(--background);
+  --color-foreground: var(--foreground);
+  --color-border: var(--border);
+  --color-muted: var(--muted);
+  --color-glass: var(--glass);
+
+  --font-sans: var(--font-inter);
+  --font-heading: var(--font-space-grotesk);
+
+  --animate-accordion-down: accordion-down 0.2s ease-out;
+  --animate-accordion-up: accordion-up 0.2s ease-out;
+}
+
+@custom-variant dark (&:is(.dark *));
+
+@layer base {
+  /* LIGHT MODE (Strict Inversion) */
+  :root {
+    --background: #ffffff;
+    --foreground: #000000;
+    --border: rgba(0, 0, 0, 0.1);
+    --muted: rgba(0, 0, 0, 0.4);
+    --glass: rgba(0, 0, 0, 0.03);
+  }
+  
+  /* DARK MODE (Midnight Obsidian / Deep Slate) */
+  .dark {
+    --background: #070a14;
+    --foreground: #ffffff;
+    --border: rgba(255, 255, 255, 0.08);
+    --muted: rgba(255, 255, 255, 0.4);
+    --glass: rgba(255, 255, 255, 0.03);
+  }
+  
+  * {
+    border-color: var(--border);
+  }
+  
+  body {
+    background-color: var(--background);
+    color: var(--foreground);
+    font-feature-settings: "rlig" 1, "calt" 1;
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+  }
+  
+  /* Lenis smooth scrolling styles */
+  html.lenis, html.lenis body {
+    height: auto;
+  }
+
+  .lenis.lenis-smooth {
+    scroll-behavior: auto !important;
+  }
+
+  .lenis.lenis-smooth [data-scroll-container] {
+    scroll-behavior: auto !important;
+  }
+
+  .lenis.lenis-scrolling iframe {
+    pointer-events: none;
+  }
+}
