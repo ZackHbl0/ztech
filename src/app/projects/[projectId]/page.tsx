@@ -6,7 +6,7 @@ export default async function ProjectPage({ params }: { params: Promise<{ projec
   const project = DEMO_PROJECTS.find(p => p.id === projectId);
 
   if (!project) {
-    return <div className="pt-32 text-center text-white text-4xl">DEBUG: Project not found for ID: "{projectId}"</div>;
+    return <div className="pt-32 text-center text-white text-4xl">DEBUG: Project not found for ID: &quot;{projectId}&quot;</div>;
   }
 
   // Get next project for the bottom link

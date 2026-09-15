@@ -35,7 +35,7 @@ export function AboutSection() {
               transition={{ duration: 0.7, delay: 0.1 }}
               className="block mb-2 md:mb-4"
             >
-              We don't just
+              We don&apos;t just
             </motion.span>
             <motion.span 
               initial={{ opacity: 0, y: 20 }}
@@ -93,7 +93,7 @@ export function AboutSection() {
             <div className="absolute inset-0 bg-blue-500/[0.02] translate-y-full group-hover:translate-y-0 transition-transform duration-500 ease-out" />
             <div className="relative z-10 font-mono text-4xl md:text-6xl text-foreground/20 font-light group-hover:text-blue-500 transition-colors duration-500 w-24">02</div>
             <h3 className="relative z-10 text-3xl md:text-5xl font-heading font-black uppercase tracking-tighter text-foreground group-hover:tracking-tight transition-all duration-500 md:w-1/3">Zero<br/>Compromise</h3>
-            <p className="relative z-10 text-foreground/60 font-sans text-base md:text-lg leading-relaxed font-light md:w-1/2">Military-grade protection for your data and users. Security isn't an afterthought, it's the absolute foundation of our engineering process.</p>
+            <p className="relative z-10 text-foreground/60 font-sans text-base md:text-lg leading-relaxed font-light md:w-1/2">Military-grade protection for your data and users. Security isn&apos;t an afterthought, it&apos;s the absolute foundation of our engineering process.</p>
           </motion.div>
 
           {/* Item 03 */}

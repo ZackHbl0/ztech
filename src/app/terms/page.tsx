@@ -42,7 +42,7 @@ export default function TermsPage() {
         <div className="max-w-3xl border-t border-border/50 pt-16 mb-24">
           <div className="space-y-8 text-foreground/80 leading-loose">
             <p>
-              By accessing and utilizing ZTech's premium engineering services, you agree to comply with our Terms of Service. These terms outline the expectations, legal obligations, and operational boundaries of our professional engagements.
+              By accessing and utilizing ZTech&apos;s premium engineering services, you agree to comply with our Terms of Service. These terms outline the expectations, legal obligations, and operational boundaries of our professional engagements.
             </p>
             <p className="text-sm">
               We engineer our partnerships with the same precision as our software. All intellectual property, project deliverables, and timelines are governed by mutual agreements established prior to project initiation.
